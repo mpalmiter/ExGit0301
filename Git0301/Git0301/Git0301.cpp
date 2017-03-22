@@ -31,3 +31,5 @@ void play(const string& aWord)
 		cout << endl << "That's it! You guessed it!" << endl;
 	cout << endl << "Thanks for playing. \n" << endl;
 }
+
+//awegfiag
