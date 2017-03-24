@@ -55,7 +55,10 @@ string mixUp(const string& aWord)
 
 void welcomePlayer(const string& aJumble)
 {
-
+	cout << "Welcome to the Jumble Game!\n";
+	cout << "Unscramble the letters to make a word.\n";
+	cout << "Enter 'quit' to quit the game.\n";
+	cout << "The jumbled word is: " << aJumble << endl << endl;
 }
 
 
@@ -77,5 +80,3 @@ void play(const string& aWord)  // John's
 		cout << endl << "That's it! You guessed it!" << endl;
 	cout << endl << "Thanks for playing. \n" << endl;
 }
-
-
