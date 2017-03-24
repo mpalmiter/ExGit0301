@@ -3,38 +3,6 @@
 
 #include <string>
 #include <iostream>
-<<<<<<< HEAD
-using namespace std;
-
-
-int main()
-{
-	cout << "Hello World!\n";
-	system("pause");
-	return 0;
-}
-
-//play the game
-void play(const string& aWord)
-{
-	string guess;
-	do
-	{
-		cout << endl << endl << "Your guess: ";
-		cin >> guess;
-
-		if ((guess != aWord) && (guess != "quit"))
-		{
-			cout << "Sorry, that's not it.";
-		}
-	} while ((guess != aWord) && (guess != "quit"));
-	if (guess == aWord)
-		cout << endl << "That's it! You guessed it!" << endl;
-	cout << endl << "Thanks for playing. \n" << endl;
-}
-
-//awegfiag
-=======
 #include <time.h>
 using namespace std;
 
@@ -44,21 +12,25 @@ void welcomePlayer(const string& aJumble);
 void play(const string&aWord);
 
 
-int main()
+int main() // Maggie's
 {
 	srand(static_cast<unsigned int>(time(0)));
 
 	string word = randomWord();
-	/*string jumble = mixUp(word);
+	string jumble = mixUp(word);
 	welcomePlayer(jumble);
-	play(word);*/
+	play(word);
 	//sakdjfhaslkdjfhl
 
 	system("Pause");
 	return 0;
 }
 
-string randomWord()
+
+
+
+
+string randomWord() // Maggie's 
 {
 	const int NUM_WORDS = 5;
 	const string WORDS[NUM_WORDS] =
@@ -76,4 +48,24 @@ string randomWord()
 	return word;
 }
 
->>>>>>> 5c11175b95dd3e58b8fb95252c05dc8e446d7b27
+
+//play the game
+void play(const string& aWord)  // John's
+{
+	string guess;
+	do
+	{
+		cout << endl << endl << "Your guess: ";
+		cin >> guess;
+
+		if ((guess != aWord) && (guess != "quit"))
+		{
+			cout << "Sorry, that's not it.";
+		}
+	} while ((guess != aWord) && (guess != "quit"));
+	if (guess == aWord)
+		cout << endl << "That's it! You guessed it!" << endl;
+	cout << endl << "Thanks for playing. \n" << endl;
+}
+
+
