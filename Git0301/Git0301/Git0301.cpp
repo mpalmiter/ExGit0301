@@ -48,6 +48,16 @@ string randomWord() // Maggie's
 	return word;
 }
 
+string mixUp(const string& aWord)
+{
+	return string();
+}
+
+void welcomePlayer(const string& aJumble)
+{
+
+}
+
 
 //play the game
 void play(const string& aWord)  // John's
